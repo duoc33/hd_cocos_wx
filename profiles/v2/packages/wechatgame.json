@@ -1,0 +1,84 @@
+{
+  "__version__": "1.0.4",
+  "builder": {
+    "common": {
+      "buildPath": "project://build",
+      "outputName": "wechatgame",
+      "mainBundleCompressionType": "merge_dep",
+      "platform": "wechatgame",
+      "scenes": [
+        {
+          "url": "db://assets/Scenes/Main.scene",
+          "uuid": "2034b8c5-1146-458f-8ba5-25be772802d6"
+        }
+      ],
+      "overwriteProjectSettings": {
+        "includeModules": {
+          "physics-2d": "physics-2d-builtin"
+        }
+      },
+      "name": "HD_Cocos_Wechat"
+    },
+    "taskOptionsMap": {
+      "1742184413188": {
+        "orientation": "portrait",
+        "appid": "wx6ac3f5090a6b99c5",
+        "buildOpenDataContextTemplate": "",
+        "separateEngine": false,
+        "highPerformanceMode": false,
+        "__version__": "1.0.4"
+      },
+      "1742185614166": {
+        "orientation": "portrait",
+        "appid": "wxc4a26bb234411d88",
+        "buildOpenDataContextTemplate": "",
+        "separateEngine": false,
+        "highPerformanceMode": false,
+        "__version__": "1.0.4"
+      },
+      "1742192573803": {
+        "orientation": "portrait",
+        "appid": "wxc4a26bb234411d88",
+        "buildOpenDataContextTemplate": "",
+        "separateEngine": false,
+        "highPerformanceMode": false,
+        "__version__": "1.0.4"
+      },
+      "1742192955846": {
+        "orientation": "portrait",
+        "appid": "wxc4a26bb234411d88",
+        "buildOpenDataContextTemplate": "",
+        "separateEngine": false,
+        "highPerformanceMode": false,
+        "__version__": "1.0.4"
+      },
+      "1742194172090": {
+        "orientation": "portrait",
+        "appid": "wxc4a26bb234411d88",
+        "buildOpenDataContextTemplate": "",
+        "separateEngine": false,
+        "highPerformanceMode": false,
+        "__version__": "1.0.4"
+      },
+      "1742211479319": {
+        "orientation": "portrait",
+        "appid": "wxc4a26bb234411d88",
+        "buildOpenDataContextTemplate": "",
+        "separateEngine": false,
+        "highPerformanceMode": false,
+        "__version__": "1.0.4"
+      }
+    },
+    "__version__": "1.3.9",
+    "options": {
+      "wechatgame": {
+        "orientation": "portrait",
+        "appid": "wxc4a26bb234411d88",
+        "buildOpenDataContextTemplate": "",
+        "separateEngine": false,
+        "highPerformanceMode": false,
+        "__version__": "1.0.4"
+      }
+    }
+  }
+}

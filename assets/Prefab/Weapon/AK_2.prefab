@@ -1,0 +1,224 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "AK_2",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_native": "",
+    "data": {
+      "__id__": 1
+    },
+    "optimizationPolicy": 0,
+    "persistent": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "AK_2",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": null,
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 2
+      },
+      {
+        "__id__": 7
+      },
+      {
+        "__id__": 9
+      }
+    ],
+    "_prefab": {
+      "__id__": 11
+    },
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 2,
+    "_layer": 1073741824,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "b1bdat3+dNJhqceltuD+kYl",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 3
+    },
+    "bulletParent": null,
+    "bulletPrefab": {
+      "__uuid__": "d69e9f1c-5a10-4af2-b2e1-f1791b9ce753",
+      "__expectedType__": "cc.Prefab"
+    },
+    "pointTarget": null,
+    "config": {
+      "__id__": 4
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "04non54QVI852jW5fqAww3"
+  },
+  {
+    "__type__": "EmitterConfig",
+    "lifeCycle": 3,
+    "bulletType": 0,
+    "targetType": 0,
+    "trackType": 0,
+    "loop": 3,
+    "loopInterval": 0.2,
+    "startParam": {
+      "__id__": 5
+    },
+    "paramList": [
+      {
+        "__id__": 6
+      }
+    ],
+    "parabolicRadian": 0.15,
+    "ellipseShortHalf": 0
+  },
+  {
+    "__type__": "EmitterParam",
+    "bulletAmount": 1,
+    "offset": {
+      "__type__": "cc.Vec3",
+      "x": -0.6,
+      "y": 0,
+      "z": 0
+    },
+    "interval": 0,
+    "linearVelocity": 10.85,
+    "angularVelocity": 0,
+    "angular": 0
+  },
+  {
+    "__type__": "EmitterParam",
+    "bulletAmount": 3,
+    "offset": {
+      "__type__": "cc.Vec3",
+      "x": 0.6,
+      "y": 0,
+      "z": 0
+    },
+    "interval": 0,
+    "linearVelocity": 0,
+    "angularVelocity": 0,
+    "angular": 0
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 8
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 51,
+      "height": 100
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "bee/XlitBDH6OSGctywgG/"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 10
+    },
+    "_customMaterial": null,
+    "_srcBlendFactor": 2,
+    "_dstBlendFactor": 4,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_spriteFrame": {
+      "__uuid__": "48b29065-e4c7-4828-8f6a-ddca1395b4b7@f9941",
+      "__expectedType__": "cc.SpriteFrame"
+    },
+    "_type": 0,
+    "_fillType": 0,
+    "_sizeMode": 1,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_useGrayscale": false,
+    "_atlas": null,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "71J1BZDc9H2IstIpXjvcNd"
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__id__": 0
+    },
+    "fileId": "b88q385LpMJohvkmj9bxYw",
+    "instance": null,
+    "targetOverrides": null
+  }
+]
