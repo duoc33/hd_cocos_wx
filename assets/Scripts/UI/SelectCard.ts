@@ -1,12 +1,15 @@
-import { _decorator, Button, Color, Component, Node, RichText, Vec3 } from 'cc';
+import { _decorator, Button, Color, Component, Node, RichText, Tween, Vec3 } from 'cc';
 import { Status } from './Status';
 import { EventCenter, EventName } from '../Event/EventCenter';
 import { WeaponType } from '../Weapon/WeaponConfig';
 import { MonsterActor } from '../MonsterSpawn/MonsterActor';
+import { MapMgr } from '../Map/MapMgr';
 const { ccclass, property } = _decorator;
 
 @ccclass('SelectCard')
 export class SelectCard extends Component {
+
+    
 
     @property({type: Status})
     public status : Status = null;
@@ -24,6 +27,13 @@ export class SelectCard extends Component {
     private AKCardText : RichText = null;
     private UziCardText : RichText = null;
 
+    @property({type : Node})
+    public TeachHand : Node = null;
+    @property({type : Node})
+    public TargetNode : Node = null;
+    @property
+    public TeachDuration : number = 1;
+    private TeachTween : Tween = null;
     protected start(): void {
         this.AKCardText = this.AKCard.getComponentInChildren(RichText);
         this.UziCardText = this.UziCard.getComponentInChildren(RichText);
@@ -34,8 +44,28 @@ export class SelectCard extends Component {
         this.onCoinsValueChanged(this.status.initCoins);
         
         EventCenter.instance.on(EventName.on_monster_death, this.onCoinsAdd, this);
+
+        const startPos = this.AKCard.getWorldPosition();
+        const endPos = this.TargetNode.getWorldPosition();
+        this.TeachHand.setWorldPosition(startPos);
+        this.TeachTween = new Tween();
+        this.TeachTween.target(this.TeachHand.worldPosition)
+        .to(this.TeachDuration, endPos , {
+            onStart : ()=>{
+                this.TeachHand.setWorldPosition(startPos);
+            },
+            onUpdate : (value)=>{
+                this.TeachHand.setWorldPosition(value);
+            },
+            onComplete : ()=>{  
+                this.TeachHand.setWorldPosition(startPos);
+            }
+        }).repeat(4).call(()=>{
+            this.TeachHand.active = false;
+        }).start();
     }
     protected onDestroy(): void {
+        this.TeachTween.destroySelf();
         EventCenter.instance.off(EventName.on_monster_death, this.onCoinsAdd, this);
     }
 
